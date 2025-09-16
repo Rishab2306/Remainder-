@@ -1,4 +1,3 @@
-# Remainder-
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,3 +72,48 @@
             50% { transform: translateY(-50vh) translateX(50px) rotate(10deg); }
             100% { transform: translateY(-110vh) translateX(-50px) rotate(-10deg); }
         }
+
+        /* Sparkles */
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: gold;
+            opacity: 0.8;
+            animation: sparkleAnim 2s infinite ease-in-out alternate;
+        }
+
+        @keyframes sparkleAnim {
+            from { transform: scale(0.5); opacity: 0.5; }
+            to { transform: scale(1.5); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>17 KO MERA BIRTHDAY HAI</h1>
+    <p>STORY NA DAALI TOH DOSTI KHATAM SAMJHO</p>
+
+    <!-- Confetti -->
+    <div class="confetti" style="left:10%; background:#ff0;"></div>
+    <div class="confetti" style="left:25%; background:#f00;"></div>
+    <div class="confetti" style="left:40%; background:#0f0;"></div>
+    <div class="confetti" style="left:55%; background:#00f;"></div>
+    <div class="confetti" style="left:70%; background:#ff69b4;"></div>
+    <div class="confetti" style="left:85%; background:#ffa500;"></div>
+
+    <!-- Balloons -->
+    <div class="balloon" style="left:5%; background:#ff6666;"></div>
+    <div class="balloon" style="left:20%; background:#66ccff;"></div>
+    <div class="balloon" style="left:35%; background:#ffcc66;"></div>
+    <div class="balloon" style="left:50%; background:#cc66ff;"></div>
+    <div class="balloon" style="left:65%; background:#66ff66;"></div>
+    <div class="balloon" style="left:80%; background:#ff6699;"></div>
+
+    <!-- Sparkles -->
+    <div class="sparkle" style="top:20%; left:15%;"></div>
+    <div class="sparkle" style="top:40%; left:70%;"></div>
+    <div class="sparkle" style="top:60%; left:30%;"></div>
+    <div class="sparkle" style="top:80%; left:50%;"></div>
+</body>
+</html>
